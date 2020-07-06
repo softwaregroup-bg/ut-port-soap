@@ -14,6 +14,7 @@
         "sort-keys": "4.0.0",
         "tap": "^14.10.6",
         "ut-port-httpserver": "^10.8.5",
+        "ut-run": "^10.26.2",
         "ut-tools": "^6.33.4"
     },
     "scripts": {
