@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ut="http://softwaregroup.com/ut">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ut:Params>
+            <Param>${params.param}</Param>
+        </ut:Params>
+    </soapenv:Body>
+</soapenv:Envelope>

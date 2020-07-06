@@ -1,0 +1,7 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <Result xmlns="http://softwaregroup.com/ut">
+            <Field>field value</Field>
+        </Result>
+    </soap:Body>
+</soap:Envelope>
