@@ -13,10 +13,11 @@ require('ut-run').run({
     config: {
         test: true,
         soap: {
-            url: 'http://127.0.0.1:9036',
-            uri: '/soap',
             templates: path.resolve(__dirname, 'templates'),
-            logLevel: 'error'
+            logLevel: 'error',
+            openApi: {
+                soap: path.resolve(__dirname, 'mock', 'soap.json')
+            }
         },
         soapSimulator: {
             port: 9036

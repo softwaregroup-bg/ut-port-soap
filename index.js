@@ -66,7 +66,9 @@ module.exports = function({ registerErrors, vfs }) {
                     method = `${method}.request`;
                     const request = this.templates[method];
                     if (!request) throw this.bus.errors['bus.methodNotFound']({params: {method}});
-                    return {
+                    return this.config.openApi ? {
+                        body: request(params)
+                    } : {
                         payload: request(params)
                     };
                 },

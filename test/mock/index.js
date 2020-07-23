@@ -5,7 +5,7 @@ module.exports = (...params) => class soapSimulator extends require('ut-port-htt
         const startResult = await super.start(...params);
         this.registerRequestHandler([{
             method: 'POST',
-            path: '/soap',
+            path: '/soap/test',
             options: {
                 auth: false,
                 handler: (response, h) => h.file(template)

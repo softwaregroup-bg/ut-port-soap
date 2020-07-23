@@ -1,0 +1,22 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "soap method paths",
+        "version": "1.0",
+        "title": "soap"
+    },
+    "host": "127.0.0.1:9036",
+    "basePath": "/soap",
+    "paths": {
+        "/test": {
+            "post": {
+                "operationId": "operation.test",
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    }
+                }
+            }
+        }
+    }
+}
