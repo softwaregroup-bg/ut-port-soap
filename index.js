@@ -36,6 +36,7 @@ module.exports = function({ registerErrors, vfs }) {
 
         async start() {
             const result = await super.start(...arguments);
+            const templateFolder = this.config.templates;
 
             const load = (name, type) => {
                 const xml = vfs.readFileSync(name).toString();
@@ -57,6 +58,16 @@ module.exports = function({ registerErrors, vfs }) {
                 });
             });
 
+            this.templatesPath = {};
+
+            await vfs.readdir(templateFolder, (error, files) => {
+                if (error) return error;
+
+                files.forEach((element) => {
+                    this.templatesPath[element] = `${templateFolder}\\${element}`;
+                });
+            });
+
             return result;
         }
 
@@ -74,7 +85,7 @@ module.exports = function({ registerErrors, vfs }) {
                     method = `${method}.response`;
                     const response = this.templates[method];
                     if (!response) throw this.bus.errors['bus.methodNotFound']({params: {method}});
-                    return response(payload);
+                    return response(payload, this.templatesPath[`${method}.xml`]);
                 }
             };
         }
