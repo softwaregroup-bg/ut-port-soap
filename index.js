@@ -64,7 +64,7 @@ module.exports = function({ registerErrors, vfs }) {
                 if (error) return error;
 
                 files.forEach((element) => {
-                    this.templatesPath[element] = `${templateFolder}\\${element}`;
+                    this.templatesPath[element] = `${templateFolder}${path.sep}${element}`;
                 });
             });
 

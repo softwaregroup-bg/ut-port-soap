@@ -4,7 +4,7 @@
     "main": "index.js",
     "dependencies": {
         "ut-function.template": "^1.6.3",
-        "ut-function.xml2json": "^1.1.7"
+        "ut-function.xml2json": "1.1.8-dfa-0.0"
     },
     "peerDependencies": {
         "ut-port-http": "^8.4.0",
