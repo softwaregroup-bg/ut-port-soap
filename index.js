@@ -1,7 +1,7 @@
 const path = require('path');
 const errors = require('./errors.json');
 const template = require('ut-function.template');
-const xml2json = require('./xml2json');
+const xml2json = require('ut-function.xml2json');
 
 module.exports = function({ registerErrors, vfs }) {
     return class soap extends require('ut-port-http')(...arguments) {
