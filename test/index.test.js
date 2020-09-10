@@ -31,7 +31,7 @@ require('ut-run').run({
                     param: 'param value'
                 },
                 result(result, assert) {
-                    assert.same(JSON.parse(result), {field: 'field value'}, 'Parse response');
+                    assert.same(result, {field: 'field value'}, 'Parse response');
                 }
             }
         ]
