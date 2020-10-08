@@ -40,7 +40,7 @@ module.exports = function({ registerErrors, vfs }) {
 
             const load = (name, type) => {
                 const xml = vfs.readFileSync(name).toString();
-                if (type === 'request') return template(xml, ['params'], {}, 'xml');
+                if (type === 'request') return template(xml, ['params'], {}, '');
                 if (type === 'response') return xml2json(xml);
             };
 
