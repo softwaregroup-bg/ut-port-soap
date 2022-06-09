@@ -78,8 +78,8 @@ module.exports = function({ registerErrors, vfs }) {
                 receive: ({payload}, {method, mtid}) => {
                     method = `${method}.response`;
                     const response = this.templates[method];
-                    if (!response){
-                        if(this.config.responseWithoutTemplate) return payload;
+                    if (!response) {
+                        if (this.config.responseWithoutTemplate) return payload;
                         throw this.bus.errors['bus.methodNotFound']({params: {method}});
                     }
                     return response(payload);
