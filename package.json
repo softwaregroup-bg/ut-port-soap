@@ -11,7 +11,7 @@
         "ut-run": "^10.26.0"
     },
     "devDependencies": {
-        "sort-keys": "4.0.0",
+        "sort-keys": "4.1.0",
         "tap": "^14.10.6",
         "ut-port-http": "^8.4.0",
         "ut-port-httpserver": "^10.8.5",
