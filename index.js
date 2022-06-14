@@ -23,6 +23,9 @@ module.exports = function({ registerErrors, vfs }) {
                 properties: {
                     templates: {
                         type: 'string'
+                    },
+                    responseWithoutTemplate: {
+                        type: 'boolean'
                     }
                 }
             };
@@ -66,7 +69,7 @@ module.exports = function({ registerErrors, vfs }) {
                     method = `${method}.request`;
                     const request = this.templates[method];
                     if (!request) throw this.bus.errors['bus.methodNotFound']({params: {method}});
-                    return this.config.openApi ? {
+                    return Object.keys(this.config.openApi).length > 0 ? {
                         body: request(params)
                     } : {
                         payload: request(params)
@@ -75,7 +78,10 @@ module.exports = function({ registerErrors, vfs }) {
                 receive: ({payload}, {method, mtid}) => {
                     method = `${method}.response`;
                     const response = this.templates[method];
-                    if (!response) throw this.bus.errors['bus.methodNotFound']({params: {method}});
+                    if (!response) {
+                        if (this.config.responseWithoutTemplate) return payload;
+                        throw this.bus.errors['bus.methodNotFound']({params: {method}});
+                    }
                     return response(payload);
                 }
             };
