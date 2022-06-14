@@ -1,3 +1,12 @@
+# [7.3.0](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.2.0...v7.3.0) (2022-06-14)
+
+
+### Features
+
+* BPS-60 - For the listed value in response return raw xml. ([#1](https://github.com/softwaregroup-bg/ut-port-soap/issues/1)) ([15e3a1f](https://github.com/softwaregroup-bg/ut-port-soap/commit/15e3a1f7e6444aa4b8246a66308d26a80638042a))
+
+
+
 # [7.2.0](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.1.0...v7.2.0) (2020-07-23)
 
 
