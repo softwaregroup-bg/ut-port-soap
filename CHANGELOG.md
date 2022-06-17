@@ -1,3 +1,7 @@
+## [7.3.2](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.1...v7.3.2) (2022-06-17)
+
+
+
 ## [7.3.1](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.0...v7.3.1) (2022-06-17)
 
 
