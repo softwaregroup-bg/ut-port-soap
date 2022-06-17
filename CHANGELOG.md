@@ -1,3 +1,12 @@
+## [7.3.1](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.0...v7.3.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* publish ([7027c82](https://github.com/softwaregroup-bg/ut-port-soap/commit/7027c82e5599c48d9cc83b228a1e5117ec8079ad))
+
+
+
 # [7.3.0](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.2.0...v7.3.0) (2022-06-14)
 
 
