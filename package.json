@@ -7,7 +7,7 @@
         "xml2js": "0.4.22"
     },
     "peerDependencies": {
-        "ut-port-http": "^8.4.0",
+        "ut-port-http": "^8.9.3",
         "ut-run": "^10.26.0"
     },
     "devDependencies": {
