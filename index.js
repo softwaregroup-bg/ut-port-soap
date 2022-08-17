@@ -10,6 +10,7 @@ module.exports = function({ registerErrors, vfs }) {
                 namespace: 'soap',
                 method: 'POST',
                 parseResponse: false,
+                uriMap: {},
                 headers: {
                     'Content-Type': 'text/xml;charset=UTF-8'
                 }
@@ -23,6 +24,9 @@ module.exports = function({ registerErrors, vfs }) {
                 properties: {
                     templates: {
                         type: 'string'
+                    },
+                    uriMap: {
+                        type: 'object'
                     }
                 }
             };
@@ -74,11 +78,13 @@ module.exports = function({ registerErrors, vfs }) {
         handlers() {
             return {
                 send: (params, {method}) => {
+                    const uri = this.config.uriMap?.[method];
                     method = `${method}.request`;
                     const request = this.templates[method];
                     if (!request) throw this.bus.errors['bus.methodNotFound']({params: {method}});
                     return {
-                        payload: request(params)
+                        payload: request(params),
+                        uri
                     };
                 },
                 receive: ({payload}, {method, mtid}) => {
