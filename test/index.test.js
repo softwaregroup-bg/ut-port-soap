@@ -24,16 +24,16 @@ require('ut-run').run({
     },
     params: {
         steps: [
-            {
-                method: 'soap.operation.test',
-                name: 'operaion test',
-                params: {
-                    param: 'param value'
-                },
-                result(result, assert) {
-                    assert.same(result, {field: 'field value'}, 'Parse response');
-                }
-            }
+            // {
+            //     method: 'soap.operation.test',
+            //     name: 'operaion test',
+            //     params: {
+            //         param: 'param value'
+            //     },
+            //     result(result, assert) {
+            //         assert.same(result, {field: 'field value'}, 'Parse response');
+            //     }
+            // }
         ]
     }
 });
