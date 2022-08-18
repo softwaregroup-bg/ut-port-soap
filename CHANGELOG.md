@@ -1,3 +1,12 @@
+## [7.3.3](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.2...v7.3.3) (2022-08-18)
+
+
+### Bug Fixes
+
+* uriMap #UTCORE-121 ([#2](https://github.com/softwaregroup-bg/ut-port-soap/issues/2)) ([967b4c2](https://github.com/softwaregroup-bg/ut-port-soap/commit/967b4c21363e9886f3c01a3d9e136db156294c26)), closes [#UTCORE-121](https://github.com/softwaregroup-bg/ut-port-soap/issues/UTCORE-121) [#UTCORE-121](https://github.com/softwaregroup-bg/ut-port-soap/issues/UTCORE-121) [#UTCORE-121](https://github.com/softwaregroup-bg/ut-port-soap/issues/UTCORE-121)
+
+
+
 ## [7.3.2](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.1...v7.3.2) (2022-06-17)
 
 
