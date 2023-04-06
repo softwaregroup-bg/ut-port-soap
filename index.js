@@ -81,7 +81,10 @@ module.exports = function({ registerErrors, vfs }) {
                         uri
                     };
                 },
-                receive: ({payload}, {method, mtid}) => {
+                receive: ({payload, ...res}, {method, mtid}) => {
+                    if (mtid === 'error') {
+                        return payload || res;
+                    }
                     method = `${method}.response`;
                     const response = this.templates[method];
                     if (!response) {
