@@ -1,3 +1,12 @@
+## [7.3.4](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.3...v7.3.4) (2023-04-07)
+
+
+### Bug Fixes
+
+* Handle connection error BPS-349 ([#3](https://github.com/softwaregroup-bg/ut-port-soap/issues/3)) ([68ddba5](https://github.com/softwaregroup-bg/ut-port-soap/commit/68ddba59a4fecc49c97f62b6b7c50b3f32ff5811))
+
+
+
 ## [7.3.3](https://github.com/softwaregroup-bg/ut-port-soap/compare/v7.3.2...v7.3.3) (2022-08-18)
 
 
